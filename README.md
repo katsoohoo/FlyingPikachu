@@ -1,3 +1,4 @@
 # FlyingPikachu
 
-This is a flappy bird clone made in processing.
+Flappy bird clone with Pokémon theme made in Processing.
+

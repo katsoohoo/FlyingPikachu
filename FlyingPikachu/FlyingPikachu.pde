@@ -73,7 +73,7 @@ void gameRun() {
     pikaLose.play();
   }
 
-  // DISPLAY GRAPHICS AND UI
+  // DISPLAY GRAPHICS
   thePlayer.show();
   pipeOne.show();
   pipeTwo.show();
@@ -82,12 +82,11 @@ void gameRun() {
   text(score, width/2, 60);
 }
 
-
 void gameStart() {
   thePlayer.show();
   textSize(40);
   fill(50);
-  text("Balloon Chuuu", width/2, 80);
+  text("Flying Pikachu", width/2, 80);
   textSize(20);
   text("Press space to start", width/2, 475);
 }
@@ -102,6 +101,8 @@ void gameOver() {
   text(score, width/2, 60);
   textSize(50);
   text("Game Over", width/2, height/2);
+  textSize(20);
+  text("Press r to restart", width/2, height/2 + 30);
 }
 
 void resetGame() {
@@ -116,8 +117,9 @@ void keyPressed() {
   if (gameState == 0 && key == ' ') {
     gameState = 1;
   }
-  if (gameState == 2 && key == ' ') {
+  if (gameState == 2 && key == 'r') {
     resetGame();
+    thePlayer.jump();
   }
   if (gameState == 1 && key == ' ') {
     thePlayer.jump();

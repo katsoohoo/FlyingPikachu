@@ -19,15 +19,18 @@ class Player {
     yPos = (height/2) - objHeight;
   }
 
+  // Show player
   void show() {
     image(pikachu, xPos, yPos, objWidth, objHeight);
   }
 
+  // Move player down with gravity
   void move() {
     yVelocity = yVelocity + gravity;
     yPos = yPos + yVelocity;
   }
 
+  // Player jumps
   void jump() {
     yVelocity = jumpImpulse;
   }
