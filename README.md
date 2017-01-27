@@ -10,3 +10,9 @@ Flappy bird clone with Pokémon theme made in Processing. This game was used as 
 <img src="screenshots/screenshot1.png" width="250" />
 <img src="screenshots/screenshot2.png" width="250" />
 <img src="screenshots/screenshot3.png" width="250" />
+
+## Web Version
+Ported web version of FlyingPikachu using Processing.js.
+(Warning: Audio plays automatically)
+
+### [Live Preview](https://katsoohoo.github.io/FlyingPikachu/web/)
